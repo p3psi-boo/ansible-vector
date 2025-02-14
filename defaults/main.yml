@@ -8,6 +8,7 @@ vector_config_file: /etc/vector/vector.yaml
 # vector_groups: []
 
 # install vector from repo
+vector_version: 0.44.0
 vector_install_from_repo: false
 vector_repo:
   Debian: deb [signed-by=/usr/share/keyrings/datadog-archive-keyring.gpg] https://apt.vector.dev/ stable vector-0
@@ -22,6 +23,9 @@ vector_repo_key:
     - https://keys.datadoghq.com/DATADOG_RPM_KEY_B01082D3.public
     - https://keys.datadoghq.com/DATADOG_RPM_KEY_FD4BF915.public
 vector_repo_gpgcheck: true
+vector_arch:
+    x86_64: amd64
+    arm64: arm64
 
 # vector package name
 vector_package: vector

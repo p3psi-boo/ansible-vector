@@ -1,5 +1,5 @@
 ---
-namespace: telekom_mms
+namespace: p3psi_boo
 name: vector
 version: 1.0.0
 readme: README.md
@@ -16,8 +16,8 @@ tags:
   - vector
   - logging
   - monitoring
-dependencies:
-  community.general: ">=8.6.0"
+# dependencies:
+  # community.general: ">=8.6.0"
 repository: https://github.com/telekom-mms/ansible-vector
 documentation: https://github.com/telekom-mms/ansible-vector
 homepage: https://github.com/telekom-mms/ansible-vector

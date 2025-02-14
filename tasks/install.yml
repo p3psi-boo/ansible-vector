@@ -6,7 +6,7 @@
     - name: Install vector (Debian)
       when: ansible_os_family == 'Debian'
       ansible.builtin.apt:
-        deb: "https://apt.vector.dev/pool/v/ve/vector_{{ vector_version }}-1_{{ arch }}.deb"
+        deb: "https://github.com/vectordotdev/vector/releases/download/v{{ vector_version }}/vector_{{ vector_version }}-1_{{ arch }}.deb"
         install_recommends: true
       notify: Restart vector
       vars:
